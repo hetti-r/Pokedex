@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background:radial-gradient(#ffd8d8ab, #9198e5a6) fixed, url('https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/pokemon-chromebook-wallpaper.jpg') no-repeat fixed
+    center center/cover;
+  font-family: 'Open Sans', sans-serif;
+  margin: 5rem;
+  text-align: center;
+}
+
+.card {
+    background-color: rgb(182, 202, 217);
+    color: #464856;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 135px;
+  color: #fa5f5f;
+  text-shadow: 1px 1px 2px rgb(150, 24, 24), 0 0 1em rgba(30, 30, 57, 0.692), 0 0 0.2em rgba(59, 25, 104, 0.548);
+}
+
+.data {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.data div {
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+}
+.data div:hover {
+  box-shadow: 0 0 10px rgb(255, 60, 60);
+}
+.data div:hover img {
+  filter: saturate(1);
+}
+.data div:hover h2 {
+  background-color: #e26161;
+}
+
+.data h2 {
+  background-color: #464856;
+  border-radius: 0 0 5px 5px;
+  padding: 1rem;
+}
+
+.data img {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  filter: saturate(0.1);
+}
+input {
+  padding: 1rem;
+  font-family: inherit;
+  margin: 2rem auto;
+}
